@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel {
+  height: 80vh;
+  flex: 0.5;
+  background-size: cover;
+  background-image: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+}
+
+.panel h3 {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3 ease-in 0.4s;
+}
+
+#panel-1 {
+  background-image: url("https://source.unsplash.com/1080x720/?forest");
+}
+
+#panel-2 {
+  background-image: url("https://source.unsplash.com/1080x720/?waterfall");
+}
+
+#panel-3 {
+  background-image: url("https://source.unsplash.com/1080x720/?beach");
+}
+
+#panel-4 {
+  background-image: url("https://source.unsplash.com/1080x720/?mountains");
+}
+
+#panel-5 {
+  background-image: url("https://source.unsplash.com/1080x720/?snowfall");
+}
