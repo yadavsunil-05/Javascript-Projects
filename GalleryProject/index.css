@@ -18,7 +18,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
-  transition: opacity 0.3 ease-in 0.4s;
+  transition: opacity 300ms ease-in 400ms;
 }
 
 .panel {
@@ -32,6 +32,11 @@ body {
   cursor: pointer;
   margin: 10px;
   position: relative;
+  transition: all 700ms ease-in;
+}
+
+.panel:hover {
+  box-shadow: 2px 2px 5px rgb(171, 171, 171);
 }
 
 .panel h3 {
