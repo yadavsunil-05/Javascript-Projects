@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="bank-balance-display">
+    <table style="width: 80%;">
+      <tr>
+        <th class="heading1">Account Holder Name</th>
+        <th class="heading2">Previous Account Balance</th>
+        <th class="heading3">Balance after Interest</th>
+      </tr>
+      <tr class="bg-1">
+        <td class="text">Antonio Moreno</td>
+        <td><input type="text" id="bank-balance-1" class="bg-3"></td>
+        <td><input type="text" id="bal1" disabled></td>
+      </tr>
+      <tr class="bg-2">
+        <td class="text">Ana Trujillo</td>
+        <td><input type="text" id="bank-balance-2" class="bg-3"></td>
+        <td><input type="text" id="bal2" disabled></td>
+      </tr>
+      <tr class="bg-1">
+        <td class="text">Maria Anders</td>
+        <td><input type="text" id="bank-balance-3" class="bg-3"></td>
+        <td><input type="text" id="bal3" disabled></td>
+      </tr>
+      <tr class="bg-2">
+        <td class="text">Emparedados helados</td>
+        <td><input type="text" id="bank-balance-4" class="bg-3"></td>
+        <td><input type="text" id="bal4" disabled></td>
+      </tr>
+      <tr class="bg-1">
+        <td class="text">Futterkiste</td>
+        <td><input type="text" id="bank-balance-5" class="bg-3"></td>
+        <td><input type="text" id="bal5" disabled></td>
+      </tr>
+    </table>
+    <button onclick="calculateInterest()">Calculate interest for all account holder</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

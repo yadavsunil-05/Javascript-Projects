@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bank-balance-display {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  padding: 100px;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)), url('bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
+
+.heading1,
+.heading2,
+.heading3 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
+.heading1 {
+  background-color: #f26c83;
+}
+
+.heading2 {
+  background-color: #db545a;
+}
+
+.heading3 {
+  background-color: #d02341;
+}
+
+
+.bg-1 {
+  background-color: #1a1a1a;
+}
+
+
+.bg-2 {
+  background-color: #333333;
+}
+
+
+.bg-3 {
+  background-color: #4b4b4b;
+}
+
+table {
+  border-radius: 5px;
+}
+
+table,
+th,
+tr,
+td {
+  border: 2px solid #242424;
+  border-collapse: collapse;
+}
+
+
+th,
+td {
+  padding: 20px;
+}
+
+
+td input {
+  width: 80%;
+  height: 25px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  color: white;
+  position: relative;
+  right: -20px;
+}
+
+.text {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 23px;
+  color: rgb(79, 79, 79);
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #db545a;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #c73f46;
+}

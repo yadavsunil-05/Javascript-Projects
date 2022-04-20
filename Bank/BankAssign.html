@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid rgb(61, 61, 61);
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width:80%">
+    <tr>
+      <th>Account Holder</th>
+      <th>Balance</th>
+      <th>Balance After Interest</th>
+    </tr>
+    <tr>
+      <td>Aditya</td>
+      <td><input type="text" id="Aditya" onblur="getVal1()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>Samuel</td>
+      <td><input type="text" onblur="getVal2()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>vaishnavi</td>
+      <td><input type="text" onblur="getVal3()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>chaitanya</td>
+      <td><input type="text" onblur="getVal4()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>Akash</td>
+      <td><input type="text" onblur="getVal5()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td>Naveen</td>
+      <td><input type="text" onblur="getVal6()"></td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <button type="submit">Submit</button>
+
+  <script src="BankAssign.js">
+    let bal = document.getElementById('Aditya').innerText;
+    console.log(bal);
+  </script>
+</body>
+
+</html>
