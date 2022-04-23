@@ -1,0 +1,9 @@
+.registration-form {
+  background-color: rgba(207, 105, 105, 0.374);
+  width: 90%;
+  margin: auto;
+  margin-top: 7rem;
+  padding: 1.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
