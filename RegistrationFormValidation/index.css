@@ -7,3 +7,10 @@
   border: 2px solid black;
   border-radius: 1rem;
 }
+
+/* For removing arrows from the input number tag*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
