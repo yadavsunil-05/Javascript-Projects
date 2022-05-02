@@ -22,15 +22,21 @@
         <div class="col-md-4">
           <label for="firstName" class="form-label">First name</label>
           <input type="text" class="form-control" id="firstName" required>
-          <div class="valid-feedback">
+          <div class="valid-feedback" id="firstNameValid">
             Looks good!
+          </div>
+          <div class="invalid-feedback" id="firstNameInvalid">
+            Please enter correct first name.
           </div>
         </div>
         <div class="col-md-4">
           <label for="lastName" class="form-label">Last name</label>
           <input type="text" class="form-control" id="lastName" required>
-          <div class="valid-feedback">
+          <div class="valid-feedback" id="lastNameValid">
             Looks good!
+          </div>
+          <div class="invalid-feedback" id="lastNameInvalid">
+            Please enter correct last name.
           </div>
         </div>
         <div class="col-md-4">
@@ -38,7 +44,10 @@
           <div class="input-group has-validation">
             <span class="input-group-text" id="inputGroupPrepend">@</span>
             <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
+            <div class="valid-feedback" id="emailValid">
+              Looks good!
+            </div>
+            <div class="invalid-feedback" id="emailInvalid">
               Please choose a E-mail.
             </div>
           </div>
@@ -46,24 +55,33 @@
         <div class="col-md-4">
           <label for="phoneNumber" class="form-label">Phone Number</label>
           <input type="text" class="form-control" id="phoneNumber" required>
-          <div class="invalid-feedback">
+          <div class="valid-feedback" id="phoneValid">
+            Looks good!
+          </div>
+          <div class="invalid-feedback" id="phoneInvalid">
             Please provide a valid phone number.
           </div>
         </div>
         <div class="col-md-4">
           <label for="state" class="form-label">State</label>
-          <select class="form-select" id="State" required>
+          <select class="form-select" id="state" required>
             <option selected disabled value="">Choose...</option>
             <option>...</option>
           </select>
-          <div class="invalid-feedback">
+          <div class="valid-feedback" id="stateValid">
+            Looks good!
+          </div>
+          <div class="invalid-feedback" id="stateInvalid">
             Please select a valid state.
           </div>
         </div>
         <div class="col-md-4">
           <label for="zip-code" class="form-label">Zip-Code</label>
           <input type="text" class="form-control" id="zip-code" required>
-          <div class="invalid-feedback">
+          <div class="valid-feedback" id="zipCodeValid">
+            Looks good!
+          </div>
+          <div class="invalid-feedback" id="zipCodeInvalid">
             Please provide a valid zip-code.
           </div>
         </div>
