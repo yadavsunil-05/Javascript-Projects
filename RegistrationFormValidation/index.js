@@ -8,7 +8,9 @@ let phoneInvalid = document.getElementById('phoneInvalid');
 let phoneValid = document.getElementById('phoneValid');
 let zipCodeInvalid = document.getElementById('zipCodeInvalid');
 let zipCodeValid = document.getElementById('zipCodeValid');
-
+let tncInvalid = document.getElementById("tncInvalid");
+let stateInvalid = document.getElementById("stateInvalid");
+let stateValid = document.getElementById("stateValid");
 
 
 let validateForm = function () {
@@ -19,6 +21,7 @@ let validateForm = function () {
   let phone = document.getElementById("phoneNumber").value;
   let state = document.getElementById("state").value;
   let zipcode = document.getElementById("zip-code").value;
+  let tncCheckBox = document.getElementById("tncCheckBox").checked;
 
   if (firstName === "") {
     firstNameInvalid.style.display = 'block';
@@ -65,4 +68,20 @@ let validateForm = function () {
     zipCodeInvalid.style.display = 'none';
     zipCodeValid.style.display = 'block';
   }
+
+  if (tncCheckBox === false) {
+    tncInvalid.style.display = 'block'
+  }
+  else {
+    tncInvalid.style.display = 'none'
+  }
+
+  if (state === "") {
+    stateInvalid.style.display = 'block';
+    stateValid.style.display = 'none';
+  } else {
+    stateInvalid.style.display = 'none';
+    stateValid.style.display = 'block';
+  }
+
 }
