@@ -83,5 +83,4 @@ let validateForm = function () {
     stateInvalid.style.display = 'none';
     stateValid.style.display = 'block';
   }
-
 }
