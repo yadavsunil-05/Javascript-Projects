@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+input[type='text'] {
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  border-collapse: collapse;
+}
+
+#mytable {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <div>
+        <input type="password" placeholder="Create your password.." id="input-password">
+        <button onclick="storePassword()">Sign Up</button>
+        <div id="saved-password" class="block">
+          <p>Password Saved Succesfully!!</p>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <input type="password" placeholder="Enter your password.." id="read-password">
+        <button onclick="validatePassword()">Log In</button>
+        <div id="valid-password" class="block">
+          <p> Password verified successfully!! Access granted.</p>
+        </div>
+        <div id="Invalid-password" class="block">
+          <p>Log In failed!! Please check your password.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js">
+
+  </script>
+</body>
+
+</html>

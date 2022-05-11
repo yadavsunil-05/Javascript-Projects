@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+.container {
+  width: 50%;
+  height: auto;
+  border: 2px solid #d9757a;
+  border-radius: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('https://yadavsunil-05.github.io/Javascript-Projects/Bank/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+
+.container div {
+  padding: 2rem;
+  background-color: #1a1a1aca;
+  border-radius: 1rem;
+}
+
+input {
+  display: block;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.5rem;
+  background-color: #717171;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: #da595f;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bd464c;
+}
+
+.block {
+  display: none;
+}
+
+#saved-password,
+#valid-password {
+  color: green;
+}
+
+#Invalid-password {
+  color: red;
+}
+
+p {
+  font-size: 2rem;
+}
