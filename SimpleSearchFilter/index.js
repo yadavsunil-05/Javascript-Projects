@@ -4,9 +4,14 @@ const searchFunc = () => {
   let trTag = myTable.getElementsByTagName('tr');
 
   for (let i = 0; i < trTag.length; i++) {
-    let td = trTag[i].getElementsByTagName('td')[0]
-    if (td.textContent.toUpperCase().includes(filter)) {
-
-    }
+    let tdata = trTag[i].getElementsByTagName('td')[0]
+    // let text = td.innerText;
+    console.log(tdata.innerText)
+    // if (text.toUpperCase().includes(filter)) {
+    //   trTag[i].style.display = 'block'
+    // }
+    // else {
+    //   trTag[i].style.display = 'none'
+    // }
   }
 }

@@ -9,6 +9,8 @@ html {
 }
 
 
+
+
 .container {
   width: 50%;
   height: auto;
@@ -20,6 +22,14 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+marquee {
+  color: azure;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
 
 .background {
   width: 100vw;
@@ -78,13 +88,22 @@ button:hover {
 
 #saved-password,
 #valid-password {
+  background-color: #1a1a1aca;
   color: green;
+  width: 60%;
+  padding: 0;
+  margin: auto;
 }
 
 #Invalid-password {
   color: red;
+  background-color: #1a1a1a87;
+  width: 60%;
+  padding: 0;
+  margin: auto;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
 }

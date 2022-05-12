@@ -31,6 +31,26 @@ const storePassword = () => {
   console.log(password)
 }
 
+let checkPassword = (len) => {
+  if (password.length < 5) {
+    document.getElementById("password-strength").style.display = "block"
+    document.getElementById("password-strength").innerText = "weak"
+    document.getElementById("password-strength").style.color = "red"
+  }
+  else if (password.length < 8) {
+    document.getElementById("password-strength").style.display = "block"
+    document.getElementById("password-strength").innerText = "Medium"
+    document.getElementById("password-strength").style.color = "orange"
+  }
+  else {
+    document.getElementById("password-strength").style.display = "block"
+    document.getElementById("password-strength").innerText = "Strong"
+    document.getElementById("password-strength").style.color = "Green"
+  }
+}
+
+
+
 const validatePassword = () => {
   let decodepassword = document.getElementById("read-password").value;
   decodepassword = decode(decodepassword)
@@ -46,6 +66,7 @@ const validatePassword = () => {
     }
   }
 }
+
 
 let encode = (inputString) => {
   const arr = inputString.split("");
