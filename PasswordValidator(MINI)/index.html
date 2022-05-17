@@ -14,8 +14,7 @@
     <marquee>Welcome!! to user password authentication page.</marquee>
     <div class="container">
       <div>
-        <input type="password" placeholder="Create your password.." id="input-password">
-        <!-- onkeyup="checkPassword()" -->
+        <input type="password" placeholder="Create your password.." id="input-password" onkeyup="checkPassword()">
         <p id="password-strength" class="block"></p>
         <button onclick="storePassword()">Sign Up</button>
         <div id="saved-password" class="block">

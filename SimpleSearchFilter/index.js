@@ -5,13 +5,17 @@ const searchFunc = () => {
 
   for (let i = 0; i < trTag.length; i++) {
     let tdata = trTag[i].getElementsByTagName('td')[0]
-    // let text = td.innerText;
-    console.log(tdata.innerText)
-    // if (text.toUpperCase().includes(filter)) {
-    //   trTag[i].style.display = 'block'
-    // }
-    // else {
-    //   trTag[i].style.display = 'none'
-    // }
+    if (tdata) {
+      let text = tdata.textContent;
+      if (!text.toUpperCase().includes(filter)) {
+        trTag[i].style.display = 'none'
+      }
+    }
   }
 }
+
+setInterval(() => {
+  new Date().getTime;
+}, 1000)
+
+
