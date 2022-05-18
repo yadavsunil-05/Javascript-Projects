@@ -9,3 +9,17 @@ let userGuess = [];
   document.getElementById('gameArea').style.display = 'none'
 })();
 
+
+const startGame = () => {
+  document.getElementById('gameArea').style.display = "block";
+  document.getElementById('welcomeScreen').style.display = "none"
+}
+
+
+const easyMode = () => {
+  startGame();
+}
+
+const hardMode = () => {
+  startGame();
+}
