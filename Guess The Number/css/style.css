@@ -28,35 +28,35 @@ body {
 
 
 main {
-  width: 30vw;
+  width: 35vw;
   /* height: 90vh; */
   text-align: center;
   background-color: var(--bakground);
   border: solid 1rem var(--dark);
   margin: auto 0;
   border-radius: 1rem;
-  padding: 5rem 5rem;
+  padding: 2rem 4rem;
   color: #1f2933;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin: 1rem;
+  font-size: 2.3rem;
+  margin: 0.5rem;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 main img {
-  width: 70%;
-  max-height: 19rem;
+  width: 95%;
+  max-height: 22rem;
   height: auto;
-  margin: 0.8rem 0 2.5rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 .button-wrapper {
@@ -65,20 +65,19 @@ main img {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 button {
-  min-width: 20rem;
+  min-width: 22rem;
   background-image: linear-gradient(92.88deg, #445eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
   color: white;
   border-radius: 0.6rem;
   border-style: none;
   cursor: pointer;
-  box-sizing: border-box;
-  padding: 1.3rem 2.5rem;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
   text-shadow: rgba(0, 0, 0, 0.25) 0 0.3rem 0.8rem;
   transition: all 0.5s;
   user-select: none;
@@ -100,15 +99,47 @@ button:last-child {
 /*---------------Game Area---------------------*/
 
 #gameArea {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+#newGameButton button {
+  margin: 2rem 0;
+}
 
 
+input {
+  width: 25rem;
+  border: 0.1rem solid lightgray;
+  background-color: transparent;
+  margin: 3rem 0;
+  padding: 1.8rem 0;
+  text-align: center;
+  outline: none;
+  font-size: 1.8rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.stats {
+  text-align: left;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+
+.info span {
+  font-size: 1.8rem;
+  color: red;
+}
 
 
 
