@@ -3,6 +3,8 @@ let userGuess = [];
 let maxGuess;
 let userUpdate = document.getElementById("textOutput");
 let userInputToEmpty = document.getElementById("inputBox");
+let audio = new Audio('audio/audio.mp3');
+let audio2 = new Audio('audio/audio2.wav');
 
 //Init Method IIFE
 (function () {
@@ -16,8 +18,15 @@ const startGame = () => {
   document.getElementById("welcomeScreen").style.display = "none";
 };
 
+const startNewGame = () => {
+  document.getElementById("newGameButton").style.display = "inline";
+  userInputToEmpty.setAttribute("disabled", "true");
+};
+
+
 //Logic Behind the App
 const compareGuess = () => {
+  audio2.play();
   let userNum = Number(document.getElementById("inputBox").value);
   let arrlength = userGuess.push(userNum); // userGuess = [...userGuess,userNum]  Spread Operator
   document.getElementById("guesses").innerText = userGuess.join(" ");
@@ -29,6 +38,7 @@ const compareGuess = () => {
       userUpdate.innerText = "Your guess is Low 😌";
     } else {
       userUpdate.innerText = "It's Correct 😀";
+      startNewGame();
     }
   } else {
     if (userNum > computerGuess) {
@@ -38,17 +48,28 @@ const compareGuess = () => {
     } else {
       userUpdate.innerText = "It's Correct 😀";
     }
+    startNewGame();
   }
   userInputToEmpty.value = ""; //Deleting the text in input box
   document.getElementById("attempts").innerText = arrlength;
 };
 
+
 const easyMode = () => {
+  audio.play();
   maxGuess = 10;
   startGame();
 };
 
 const hardMode = () => {
+  audio.play();
   maxGuess = 5;
   startGame();
 };
+
+
+//Reload the Page
+const newGameReload = () => {
+  window.location.reload();  //page refresh
+}
+
