@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h2>Order Status Management</h2>
+  <main>
+    <section class="order">
+      <input type="text" placeholder="Please enter your Order ID" id="order-id-input" />
+      <button onclick="executeOrder(func)">Execute</button>
+    </section>
+    <section class="process-track">
+      <h4 id="orderIdInfo"></h4>
+      <div id="process1" class="track">
+        <p>Order placed</p>
+      </div>
+      <div id="process2" class="track">
+        <p>Chef received the order and started preparing</p>
+      </div>
+      <div id="process3" class="track">
+        <p>Pizza Sauce added</p>
+      </div>
+      <div id="process4" class="track">
+        <p>First Layer of cheese added</p>
+      </div>
+      <div id="process5" class="track">
+        <p>Toppings added</p>
+      </div>
+      <div id="process6" class="track">
+        <p>Second layer of cheeze added</p>
+      </div>
+      <div id="process7" class="track">
+        <p>Pizza baked!</p>
+      </div>
+      <div id="process8" class="track">
+        <p>Oregano added and packed</p>
+      </div>
+      <div id="process9" class="track">
+        <p>The order is ready and handed over to the Zomato guy!</p>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
