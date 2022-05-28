@@ -69,6 +69,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   font-size: 4vw;
+  font-weight: bolder;
 }
 
 .container div:hover {
@@ -155,6 +156,17 @@ img {
     display: flex;
     flex-direction: column;
     padding: 10px;
+  }
+
+  .box {
+    font-size: 5vw;
+  }
+
+}
+
+@media(max-width:750px) {
+  .box {
+    font-size: 9vw;
   }
 
 }
