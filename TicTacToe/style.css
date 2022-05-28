@@ -47,6 +47,7 @@ nav ul li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 10px;
 }
 
 
@@ -67,7 +68,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3.5vw;
+  font-size: 4vw;
 }
 
 .container div:hover {
@@ -88,7 +89,7 @@ h2 {
 #reset {
   background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
   margin: 10px;
-  padding: 10px 30px;
+  padding: 12px 35px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -106,10 +107,14 @@ h2 {
   cursor: pointer;
 }
 
+h2 {
+  font-size: 30px
+}
+
+
 img {
-  width: 40%;
-  height: auto;
-  /* display: none; */
+  width: 0;
+  transition: width 0.8s ease-in-out;
 }
 
 .bt-0 {
@@ -133,7 +138,6 @@ img {
 
 @media (max-width:950px) {
 
-
   .main-container {
     width: 100%;
     height: 95vh;
@@ -150,12 +154,12 @@ img {
     height: 85%;
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
-
 
 }
 
-@media (max-width:400px) {
+@media (max-width:414px) {
   .container {
     display: grid;
     grid-template-rows: repeat(3, 20vw);
@@ -179,12 +183,9 @@ img {
     font-size: medium;
   }
 
-
-
-  img {
-    width: 50%;
-    height: auto;
-    /* display: none; */
+  #reset:hover {
+    cursor: pointer;
+    background-color: #fd9c64d3;
   }
 
 }
