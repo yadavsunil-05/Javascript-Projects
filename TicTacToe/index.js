@@ -24,15 +24,15 @@ const checkWin = () => {
 
   wins.forEach((mat) => {
     if (
-      (boxtext[mat[0]].innerText === boxtext[mat[1]].innerText ) && ( boxtext[mat[1]].innerText === boxtext[mat[2]].innerText) && (boxtext[mat[0]].innerText !== "")
+      (boxtext[mat[0]].innerText === boxtext[mat[1]].innerText) && (boxtext[mat[1]].innerText === boxtext[mat[2]].innerText) && (boxtext[mat[0]].innerText !== "")
     ) {
       document.getElementById("changeText").innerText = ` Hurray!!! ${boxtext[mat[0]].innerText}  Won.🏆`;
       gameOver = true;
-      document.querySelector(".imgbox").getElementsByTagName('img')[0].style.width ="45%"
-      setTimeout(()=>{
+      document.querySelector(".imgbox").getElementsByTagName('img')[0].style.width = "45%"
+      setTimeout(() => {
         resetTicTacToe()
-      },3000)
-    } 
+      }, 4000)
+    }
   });
 };
 
@@ -47,7 +47,7 @@ Array.from(boxes).forEach((element) => {
       turn = changeTurn();
       turnping.play();
       checkWin();
-      if(!gameOver) document.getElementById("changeText").innerText = `Turn For : ${turn}`;
+      if (!gameOver) document.getElementById("changeText").innerText = `Turn For : ${turn}`;
     }
   });
 });
@@ -55,6 +55,6 @@ Array.from(boxes).forEach((element) => {
 
 
 //Adding Onclick EventListner on reset Button
-const resetTicTacToe = ()=>{
-    window.location.reload()
+const resetTicTacToe = () => {
+  window.location.reload()
 }
