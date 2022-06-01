@@ -58,3 +58,5 @@ Array.from(boxes).forEach((element) => {
 const resetTicTacToe = () => {
   window.location.reload()
 }
+
+
