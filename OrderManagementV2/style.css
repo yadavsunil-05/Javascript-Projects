@@ -54,10 +54,26 @@
 }
 
 .order-block .card-body span {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #empty-order-gif {
   max-width: 400px;
   margin: auto;
+}
+
+.order-status {
+  margin: auto;
+  display: block;
+  width: 85%;
+  border-radius: 20px;
+}
+
+.background-color {
+  background-color: #007bff !important;
+  margin: auto;
+  display: block;
+  width: 85%;
+  color: white;
+  border-radius: 20px;
 }
