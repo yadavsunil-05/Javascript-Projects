@@ -1,0 +1,19 @@
+ 
+ //Note:- Method 2 For creating a Html Nodes Using insertAdjacentHTML
+  const addHtml = `<div class="col-md-4 col-xs-12 order-block">
+          <div div class="card text-center" >
+         <div class="card-header">
+            Order Id:202223533
+            </div>
+          <div class="card-body">
+            <h5 class="card-title">Bill Amount:</h5>
+            <p class="card-text">Item: Pizza,Coke</p>
+            <a href="#" class="btn btn-danger">Cancel Order</a>
+          </div>
+          <div class="card-footer text-muted">
+            Pizza Baked!
+          </div>
+        </div >
+</div >`;
+  parentDiv.insertAdjacentHTML('beforeend', addHtml)
+  console.log(parentDiv)
