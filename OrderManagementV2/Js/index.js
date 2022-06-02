@@ -11,7 +11,6 @@ button.addEventListener("click", () => {
   document.querySelector("#empty-order-gif").style.display = "none";
   createNewOrderColumn(orderIdInput);
 
-  console.log("order placed")
   chefReceived(orderIdInput)
     .then(pizzaSauceAdded)
     .then(firstLayerOfCheeseAdded)
