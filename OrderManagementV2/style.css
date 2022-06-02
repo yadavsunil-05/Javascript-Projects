@@ -29,3 +29,35 @@
 .order-block {
   margin: 20px;
 }
+
+.order-block .card {
+  border-radius: 20px;
+}
+
+.order-block .card-header {
+  border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  background-image: linear-gradient(to right, #232526 0%, #2a2c2d 51%, #232526 100%);
+  color: white !important;
+}
+
+
+.order-block .card-footer {
+  padding: 0;
+}
+
+.order-block .card-footer .btn-danger {
+  width: 100%;
+  margin: 0;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.order-block .card-body span {
+  font-size: 0.9em;
+}
+
+#empty-order-gif {
+  max-width: 400px;
+  margin: auto;
+}
