@@ -57,7 +57,7 @@ h2 {
 }
 
 .btn-sm {
-  width: 100%;
+  width: 40%;
 }
 
 .rounded-pill {
@@ -67,5 +67,6 @@ h2 {
 }
 
 .card-header {
-  background: rgba(214, 214, 214, 0.479);
+  background-color: #fbac7ead;
+  background-image: linear-gradient(62deg, #fbac7eb2 0%, #f7cf68a0 100%);
 }

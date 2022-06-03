@@ -8,7 +8,7 @@ const changeTurn = () => {
 };
 
 //Function to check win
-const checkWin = () => {
+const checkWin = (myVar) => {
   let boxtext = document.getElementsByClassName("boxtext");
   console.log(boxtext);
   let wins = [
@@ -29,9 +29,10 @@ const checkWin = () => {
       document.getElementById("changeText").innerText = ` Hurray!!! ${boxtext[mat[0]].innerText}  Won.🏆`;
       gameOver = true;
       document.querySelector(".imgbox").getElementsByTagName('img')[0].style.width = "45%"
-      setTimeout(() => {
-        resetTicTacToe()
-      }, 4000)
+      // setTimeout(() => {
+      //   resetTicTacToe()
+      // }, 4000)
+      document.getElementsByClassName("box").removeEventListener('click', myVar, false)
     }
   });
 };
@@ -41,12 +42,12 @@ let boxes = document.getElementsByClassName("box");
 //return collection converting in array
 Array.from(boxes).forEach((element) => {
   let boxtext = element.querySelector(".boxtext");
-  element.addEventListener("click", () => {
+  let myVar = element.addEventListener("click", (e) => {
     if (boxtext.innerText === "") {
       boxtext.innerText = turn;
       turn = changeTurn();
       turnping.play();
-      checkWin();
+      checkWin(myVar);
       if (!gameOver) document.getElementById("changeText").innerText = `Turn For : ${turn}`;
     }
   });

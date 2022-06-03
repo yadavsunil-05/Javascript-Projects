@@ -1,5 +1,5 @@
 const toDoBlock = document.querySelector('#to-do-block')
-
+let idCnt = 0; //For Unique Id
 
 const createToDoDiv = (todoInput, todoPriority, datetime) => {
   const todoCardDiv = document.createElement("div");
@@ -24,6 +24,7 @@ const createToDoDiv = (todoInput, todoPriority, datetime) => {
   toDoBlock.append(todoCardDiv)
 
   todoCardDiv.setAttribute('class', "card to-do-card")
+  todoCardDiv.setAttribute('id', `to-do-card-${idCnt}`)
   cardHeaderdiv.setAttribute('class', "card-header")
   cardBodyDiv.setAttribute('class', "card-body")
   cardTitleH5.setAttribute('class', "card-title")
@@ -40,4 +41,5 @@ const createToDoDiv = (todoInput, todoPriority, datetime) => {
       priorityDisplaySpan.setAttribute('class', "badge rounded-pill bg-warning text-dark")
       break
   }
+  idCnt++;
 }
