@@ -12,7 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script src="index.js" defer></script>
+  <script src="Js/index.js" defer></script>
+  <script src="Js/createToDoDiv.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -48,7 +49,12 @@
         </div>
         <div class="modal-body">
           <input class="form-control form-control-lg" type="text" placeholder="Enter the task..."
-            aria-label=".form-control-lg example">
+            aria-label=".form-control-lg example" id="todo-input">
+          <select class="form-select form-select-lg mt-3" aria-label=".form-select-lg example" id="todo-priority-input">
+            <option value="High">High</option>
+            <option selected value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
           <input class="form-control form-control-lg mt-3" type="datetime-local" aria-label=".form-control-lg example-2"
             id="todo-deadline">
         </div>
