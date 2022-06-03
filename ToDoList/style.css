@@ -12,23 +12,15 @@
 
 .outer {
   text-align: center;
-  height: 100vh;
 }
 
 
 .container .todo-section {
   width: 100%;
   border: 2px solid black;
-  height: 90vh;
   border-radius: 5px;
   margin: 15px;
-}
-
-.status {
-  border: 2px solid lightsalmon;
-  padding: 10px;
-  margin: 13px;
-  border-radius: 5px;
+  min-height: 600px;
 }
 
 button {
@@ -39,7 +31,6 @@ button {
 .main-outer-btn {
   width: 100%;
   text-align: center;
-
 }
 
 .main-outer-btn button {
@@ -58,4 +49,12 @@ h2 {
   color: rgba(0, 0, 255, 0.6);
   background-color: bisque;
   padding: 5px;
+}
+
+.to-do-card {
+  margin: 10px;
+}
+
+.btn-sm {
+  width: 100%;
 }
