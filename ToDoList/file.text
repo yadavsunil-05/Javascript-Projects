@@ -9,3 +9,6 @@
     <a class="btn btn-sm btn-danger">Delete</a>
   </div>
 </div>
+
+
+ console.log("Id:" + event.dataTransfer.getData("ToDoCard"));

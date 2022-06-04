@@ -5,32 +5,43 @@ let toDoBlockEvent = document.querySelector("#to-do-block");
 let inprogessBlockEvent = document.querySelector("#in-progress-block");
 let completeBlockEevnt = document.querySelector("#completed-block");
 
-//dargOver = allowdrop
-//ondrop = todoDrop
+const parentContainerBlock = [toDoBlockEvent, inprogessBlockEvent, completeBlockEevnt]
 
-//dargStart = todoDragStart
-//ondrag = todoDarg
 
-toDoBlockEvent.addEventListener("dragover", (event) => {
-  event.preventDefault();
-});
-toDoBlockEvent.addEventListener("drop", (event) => {
-  console.log("Dropped");
-});
+parentContainerBlock.forEach(ele => {
+  ele.addEventListener("dragover", (event) => {
+    event.preventDefault();
+  });
+  ele.addEventListener("drop", (event) => {
+    let cardDraggedId = event.dataTransfer.getData("ToDoCard")
+    let cardDraggedChild = document.getElementById(cardDraggedId)
+    let currParentDiv = event.target;
+    currParentDiv.append(cardDraggedChild)
+  });
+})
+
+/*
 
 inprogessBlockEvent.addEventListener("dragover", (event) => {
   event.preventDefault();
 });
 inprogessBlockEvent.addEventListener("drop", (event) => {
-  console.log("Dropped progress");
+  let cardDraggedId = event.dataTransfer.getData("ToDoCard");
+  let cardDraggedChild = document.getElementById(cardDraggedId);
+  let currParentDiv = event.target
+  currParentDiv.append(cardDraggedChild)
 });
 
 completeBlockEevnt.addEventListener("dragover", (event) => {
   event.preventDefault();
 });
 completeBlockEevnt.addEventListener("drop", (event) => {
-  console.log("Dropped complete");
+  let cardDraggedId = event.dataTransfer.getData("ToDoCard")
+  let cardDraggedChild = document.getElementById(cardDraggedId)
+  let currParentDiv = event.target
+  currParentDiv.append(cardDraggedChild)
 });
+*/
 
 btn.addEventListener("click", () => {
   let todoInput = document.querySelector("#todo-input").value;
@@ -44,6 +55,7 @@ btn.addEventListener("click", () => {
     minute: "numeric",
     second: "numeric",
   });
+
   //Creating the To do Card
   createToDoDiv(todoInput, todoPriority, datetime);
 
@@ -53,13 +65,13 @@ btn.addEventListener("click", () => {
     ele.addEventListener("dragstart", (event) => {
       let cardDraggedId = event.target.id;
       event.dataTransfer.setData("ToDoCard", cardDraggedId);
-      console.log("Id:" + event.dataTransfer.getData("ToDoCard"));
     });
-    ele.addEventListener("drag", (event) => { });
   });
 });
 
-/* 
+
+
+/*
 https://www.w3schools.com/jsref/event_ondrag.asp
 Draggable Element:- (Element which we want to drag child ele)
 1) darggable = true
@@ -70,3 +82,4 @@ Parent Element (Where you have to drop the draggable element)
 1) ondragover
 2) ondrop
 */
+
