@@ -24,6 +24,7 @@ const createToDoDiv = (todoInput, todoPriority, datetime) => {
   toDoBlock.append(todoCardDiv)
 
   todoCardDiv.setAttribute('class', "card to-do-card")
+  todoCardDiv.setAttribute('draggable', 'true')
   todoCardDiv.setAttribute('id', `to-do-card-${idCnt}`)
   cardHeaderdiv.setAttribute('class', "card-header")
   cardBodyDiv.setAttribute('class', "card-body")
