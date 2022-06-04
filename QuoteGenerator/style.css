@@ -33,7 +33,7 @@ body {
 }
 
 .long-quote {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .fa-quote-left {
@@ -76,9 +76,12 @@ button:active {
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.twitter-btn:hover {
-  color: blue;
+.twitter-btn {
   font-size: 1.5rem;
+}
+
+.twitter-btn:hover {
+  color: #1DA1F2;
 }
 
 @media screen and (max-width:1000px) {
