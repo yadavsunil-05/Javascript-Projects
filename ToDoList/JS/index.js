@@ -47,6 +47,11 @@ btn.addEventListener("click", () => {
       event.dataTransfer.setData("ToDoCard", cardDraggedId);
     });
   });
+
+  let deleteBtn = document.querySelectorAll(".btn-sm")
+  for (let ele of deleteBtn) {
+    ele.addEventListener('click', () => ele.parentNode.parentNode.remove())
+  }
 });
 
 /*

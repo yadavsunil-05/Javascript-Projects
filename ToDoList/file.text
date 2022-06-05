@@ -12,3 +12,14 @@
 
 
  console.log("Id:" + event.dataTransfer.getData("ToDoCard"));
+
+            <!-- <div class="card to-do-card" id="test-id" draggable="true" ondragstart="abc()" ondrag="abc2()">
+            <div class="card-header">
+              <span class="badge rounded-pill bg-info text-dark">Low Priority</span>
+              <span>May 27, 2022, 4:20:00 PM</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Task 111</h5>
+              <a class="btn btn-sm btn-danger">Delete</a>
+            </div>
+          </div> -->

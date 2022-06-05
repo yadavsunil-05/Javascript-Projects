@@ -5,6 +5,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)), url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+
 .container {
   padding: 0;
   margin: 0 auto;
@@ -17,10 +26,11 @@
 
 .container .todo-section {
   width: 100%;
-  border: 2px solid black;
   border-radius: 5px;
   margin: 15px;
   min-height: 600px;
+  border-radius: 20px;
+  padding-bottom: 10px;
 }
 
 button {
@@ -34,26 +44,64 @@ button {
 }
 
 .main-outer-btn button {
-  background-color: rgb(248, 204, 151);
+  background-color: #db545a;
   border: none;
+  outline: none;
   border-radius: 5px;
-  width: 50%;
+  width: 30%;
   margin-top: 10px;
+  color: #fff;
+  padding: 15px 25px;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  font-size: 1.3rem;
 }
 
 .main-outer-btn button:hover {
-  background-color: rgb(243, 185, 113);
+  filter: brightness(110%);
+}
+
+.main-outer-btn button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(121, 121, 121, 0.65);
 }
 
 h2 {
-  color: rgba(0, 0, 255, 0.6);
-  background-color: bisque;
   padding: 5px;
 }
 
 .to-do-card {
-  margin: 10px;
+  width: 90%;
+  margin: 10px auto;
   box-shadow: 0 3px 3px 3px rgba(121, 121, 121, 0.316);
+  border: none;
+  border-radius: 0;
+}
+
+
+.heading3 {
+  background-color: #d02341;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bolder !important;
+}
+
+.bg-1 {
+  background-color: #8bc5ec9a;
+  background-image: linear-gradient(135deg, #8bc5ec9c 0%, #9599e297 100%);
+
+}
+
+
+.bg-2 {
+  background-image: linear-gradient(to top, #accbeea7 0%, #e7f0fda4 100%);
+}
+
+
+.bg-3 {
+  background-color: #a9c9ffa5;
+  background-image: linear-gradient(180deg, #a9c9ffa6 0%, #ffbbec91 100%);
+
 }
 
 .btn-sm {
@@ -67,6 +115,12 @@ h2 {
 }
 
 .card-header {
-  background-color: #fbac7ead;
-  background-image: linear-gradient(62deg, #fbac7eb2 0%, #f7cf68a0 100%);
+  background-color: #fbac7e;
+  background-image: linear-gradient(62deg, #fbac7e 0%, #dcb44f 100%);
+  border-radius: 0px !important;
+  border: none;
+}
+
+.card-title {
+  color: black;
 }
