@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: rgb(37, 9, 37);
+}
+
+.max-shop-navbar .navbar-brand img {
+  border-radius: 12px;
+  margin-right: 11px;
+}
+
+.max-shop-navbar .navbar-brand a {
+  font-weight: bold !important;
+  color: #515151 !important;
+}
+
+/* Jumbotron */
+.main-header-sec {
+  text-align: center;
+  background: #fbe5d6;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 400px;
+}
+
+.main-header-sec h1 {
+  color: rgba(37, 9, 37, 0.848);
+  font-size: 3rem;
+}
+
+.main-header-sec img {
+  width: 80%;
+  height: auto;
+  border-radius: 80px;
+  display: block;
+  margin: 5px auto;
+  margin-bottom: 20px;
+}
+
+.main-header-sec .lead {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 1rem;
+  color: rgba(37, 9, 37, 0.619);
+}
+
+hr {
+  width: 25%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.col-md-4 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
