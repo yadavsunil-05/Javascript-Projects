@@ -5,43 +5,23 @@ let toDoBlockEvent = document.querySelector("#to-do-block");
 let inprogessBlockEvent = document.querySelector("#in-progress-block");
 let completeBlockEevnt = document.querySelector("#completed-block");
 
-const parentContainerBlock = [toDoBlockEvent, inprogessBlockEvent, completeBlockEevnt]
+const parentContainerBlock = [
+  toDoBlockEvent,
+  inprogessBlockEvent,
+  completeBlockEevnt,
+];
 
-
-parentContainerBlock.forEach(ele => {
+parentContainerBlock.forEach((ele) => {
   ele.addEventListener("dragover", (event) => {
     event.preventDefault();
   });
   ele.addEventListener("drop", (event) => {
-    let cardDraggedId = event.dataTransfer.getData("ToDoCard")
-    let cardDraggedChild = document.getElementById(cardDraggedId)
+    let cardDraggedId = event.dataTransfer.getData("ToDoCard");
+    let cardDraggedChild = document.getElementById(cardDraggedId);
     let currParentDiv = event.target;
-    currParentDiv.append(cardDraggedChild)
+    currParentDiv.append(cardDraggedChild);
   });
-})
-
-/*
-
-inprogessBlockEvent.addEventListener("dragover", (event) => {
-  event.preventDefault();
 });
-inprogessBlockEvent.addEventListener("drop", (event) => {
-  let cardDraggedId = event.dataTransfer.getData("ToDoCard");
-  let cardDraggedChild = document.getElementById(cardDraggedId);
-  let currParentDiv = event.target
-  currParentDiv.append(cardDraggedChild)
-});
-
-completeBlockEevnt.addEventListener("dragover", (event) => {
-  event.preventDefault();
-});
-completeBlockEevnt.addEventListener("drop", (event) => {
-  let cardDraggedId = event.dataTransfer.getData("ToDoCard")
-  let cardDraggedChild = document.getElementById(cardDraggedId)
-  let currParentDiv = event.target
-  currParentDiv.append(cardDraggedChild)
-});
-*/
 
 btn.addEventListener("click", () => {
   let todoInput = document.querySelector("#todo-input").value;
@@ -69,8 +49,6 @@ btn.addEventListener("click", () => {
   });
 });
 
-
-
 /*
 https://www.w3schools.com/jsref/event_ondrag.asp
 Draggable Element:- (Element which we want to drag child ele)
@@ -82,4 +60,3 @@ Parent Element (Where you have to drop the draggable element)
 1) ondragover
 2) ondrop
 */
-
