@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
-
 
 /* Navbar */
 .navbar {
@@ -36,7 +39,7 @@
 }
 
 .main-header-sec img {
-  width: 80%;
+  width: 85%;
   height: auto;
   border-radius: 80px;
   display: block;
@@ -68,8 +71,41 @@ hr {
   box-shadow: none !important;
 }
 
-.col-md-4 img {
-  width: 200px;
-  height: 200px;
+.col-md-3 img {
+  width: 150px;
+  height: 150px;
   margin: 10px auto;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.btn-container .btn {
+  width: 50%;
+  padding: 8px 0;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+
+.card .product-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .checked {
+  color: orange;
+}
+
+.card .product-price {
+  color: green;
 }
