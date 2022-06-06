@@ -8,6 +8,10 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
 /* Navbar */
 .navbar {
   background-color: rgb(37, 9, 37);
@@ -75,6 +79,7 @@ hr {
   width: 150px;
   height: 150px;
   margin: 10px auto;
+  border-radius: 30px;
 }
 
 .container {
@@ -98,6 +103,10 @@ hr {
 
 .card.product {
   margin-bottom: 20px;
+  height: 410px;
+  padding-top: 10px;
+  padding-bottom: 20px !important;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .card .product-header {
@@ -107,6 +116,17 @@ hr {
 
 .card .checked {
   color: orange;
+}
+
+.card .card-title {
+  font-size: 0.9rem !important;
+  color: rgba(37, 9, 37, 0.847);
+  font-weight: 800 !important;
+}
+
+.card .card-text {
+  font-size: 0.8rem !important;
+  color: rgba(37, 9, 37, 0.619);
 }
 
 .card .product-price {

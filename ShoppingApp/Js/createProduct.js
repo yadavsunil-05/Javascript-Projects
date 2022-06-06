@@ -41,11 +41,17 @@ const createProductDiv = (productObj) => {
   cardHeaderDiv.append(cardHeaderh5)
   cardHeaderDiv.append(cardHeaderh4)
   cardBodydiv.append(cardText)
-  cardBodydiv.append(star1span)
-  cardBodydiv.append(star2span)
-  cardBodydiv.append(star3span)
-  cardBodydiv.append(star4span)
-  cardBodydiv.append(star5span)
+  const ratings = Math.ceil(productObj.rating.rate)
+  if (ratings >= 1)
+    cardBodydiv.append(star1span)
+  if (ratings >= 2)
+    cardBodydiv.append(star2span)
+  if (ratings >= 3)
+    cardBodydiv.append(star3span)
+  if (ratings >= 4)
+    cardBodydiv.append(star4span)
+  if (ratings >= 5)
+    cardBodydiv.append(star5span)
   cardBodydiv.append(starCnt)
   cardBodydiv.append(btnDiv)
   btnDiv.append(btnCart)
@@ -53,9 +59,9 @@ const createProductDiv = (productObj) => {
 
   cardHeaderh5.textContent = `${productObj.title.slice(0, 20)}...`
   cardHeaderh4.textContent = `$${productObj.price}`
-  cardText.textContent = `${(productObj.description).slice(0, 30)}...`
+  cardText.textContent = `${(productObj.description).slice(0, 40)}...`
   starCnt.textContent = `(${productObj.rating.count})`
-  btnCart.textContent = "Add to Cart"
+  btnCart.textContent = 'Add to Cart'
   btnBuy.textContent = "Buy Now"
 
   cardImg.setAttribute("src", productObj.image)
