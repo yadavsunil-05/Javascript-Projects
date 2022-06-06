@@ -1,0 +1,31 @@
+// Using Promise Chaining
+exploreBtn.addEventListener('click', () => {
+  fetch(URL)
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+}) 
+
+
+ <div class="col-md-3">
+   <div class="card product">
+     <img src=" https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="..." />
+     <div class="card-body">
+       <div class="product-header">
+         <h5 class="card-title">Card title</h5>
+         <h4 class="card-title product-price">$32</h4>
+       </div>
+       <p class="card-text">Some quick example text to...</p>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>
+       <span>(102)</span>
+       <div class="btn-container">
+         <a href="#" class="btn btn-primary">Add to Cart</a>
+         <a href="#" class="btn btn-primary">Buy Now</a>
+       </div>
+     </div>
+   </div>
+ </div>
