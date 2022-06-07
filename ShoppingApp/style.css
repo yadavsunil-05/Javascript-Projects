@@ -196,3 +196,12 @@ hr {
 .fa-cart-plus-checked {
   color: lightgreen !important;
 }
+
+footer {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(37, 9, 37, 0.88);
+  color: white;
+  text-align: center;
+  padding: 10px 3px;
+}
