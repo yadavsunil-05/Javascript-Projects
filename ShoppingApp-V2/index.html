@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="icon" href="./assets/icon.jpg" type="image/png" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="Js/script.js" defer></script>
+  <script src="Js/createProduct.js" defer></script>
+  <script src="Js/misc.js" defer></script>
+  <script src="Js/addToCart.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Max's Shopping App</title>
+</head>
+
+<body onload="fetchProducts()">
+  <!---- NavBar ---->
+  <nav class="navbar navbar-expand-lg navbar-dark max-shop-navbar">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/icon.jpg" width="30" height="30" alt="" />Max's
+      Shopping
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#jumbotron">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart<i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-light cart-val">0</span></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">SignUp </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LogIn </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!------- Jumbotron Section ------->
+  <div class="jumbotron main-header-sec" id="jumbotron">
+    <div class="jumbotron-txt-container-1">
+      <h1 class="display-4">
+        Welcome to<br />
+        <span class="brand-name">Max's</span>
+        Shopping App
+      </h1>
+      <p class="lead">
+        The one stop destination for all your shopping needs! Be it from
+        fashion to electronics, you getit all here!
+      </p>
+      <a class="btn btn-primary btn-lg" href="#products" role="button">Explore</a>
+    </div>
+    <div class="jumbotron-txt-container-2">
+      <img src="./assets/cart.gif" alt="" />
+    </div>
+  </div>
+
+  <!------ Main Section ------->
+  <div class="container">
+    <div class="row" id="products">
+      <h1 class="row-header">Trending Offers</h1>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+
+  <!------ Modal Section ------->
+  <div id="simple-modal" class="modal">
+    <div class="modal-content">
+      <span class="closeBtn">
+        <i class="fa fa-close" style="font-size:24px"></i>
+      </span>
+      <p>Hello.... I m Modal</p>
+    </div>
+  </div>
+
+
+  <!------ Footer Section ------->
+  <footer>
+    <p>@yadav-sunil-05</p>
+  </footer>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
