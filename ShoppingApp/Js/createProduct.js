@@ -1,18 +1,5 @@
 const rowContainer = document.querySelector('#products')
 
-/*
-Single Object Imformation()
-{
-  category: "men's clothing"
-  description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
-  id: 1
-  image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-  price: 109.95
-  rating: {rate: 3.9, count: 120}
-  title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
-}
-
-*/
 
 const createProductDiv = (productObj) => {
   const colDiv = document.createElement("div")
@@ -61,7 +48,7 @@ const createProductDiv = (productObj) => {
   cardHeaderh4.textContent = `$${productObj.price}`
   cardText.textContent = `${(productObj.description).slice(0, 40)}...`
   starCnt.textContent = `(${productObj.rating.count})`
-  btnCart.textContent = 'Add to Cart'
+  btnCart.innerHTML = '<i class="fa fa-cart-plus"><i>'
   btnBuy.textContent = "Buy Now"
 
   cardImg.setAttribute("src", productObj.image)
@@ -82,9 +69,29 @@ const createProductDiv = (productObj) => {
   star3span.setAttribute("class", "fa fa-star checked")
   star4span.setAttribute("class", "fa fa-star checked")
   star5span.setAttribute("class", "fa fa-star checked")
+  starCnt.setAttribute('class', "rating-count")
   btnDiv.setAttribute("class", "btn-container")
   btnCart.setAttribute("class", "btn btn-primary add-to-cart-btn")
   btnBuy.setAttribute("class", "btn btn-primary")
+
+
+  btnCart.addEventListener('click', (e) => {
+    btnCart.innerHTML = '<i class="fa fa-cart-plus fa-cart-plus-checked"><i>'
+    addToCart(productObj.id)
+  })
 }
 
 
+/*
+Single Object Imformation()
+{
+  category: "men's clothing"
+  description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday"
+  id: 1
+  image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+  price: 109.95
+  rating: {rate: 3.9, count: 120}
+  title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+}
+
+*/

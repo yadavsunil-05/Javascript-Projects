@@ -12,11 +12,13 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="Js/script.js" defer></script>
   <script src="Js/createProduct.js" defer></script>
+  <script src="Js/misc.js" defer></script>
+  <script src="Js/addToCart.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>Max's Shopping App</title>
 </head>
 
-<body>
+<body onload="fetchProducts()">
   <!---- NavBar ---->
   <nav class="navbar navbar-expand-lg navbar-dark max-shop-navbar">
     <a class="navbar-brand" href="#">
@@ -34,10 +36,14 @@
           <a class="nav-link" href="#products">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#jumbotron">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart<i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-light cart-val">0</span></a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -51,7 +57,7 @@
     </div>
   </nav>
   <!------- Jumbotron Section ------->
-  <div class="jumbotron main-header-sec">
+  <div class="jumbotron main-header-sec" id="jumbotron">
     <div class="jumbotron-txt-container-1">
       <h1 class="display-4">
         Welcome to<br />
@@ -62,7 +68,7 @@
         The one stop destination for all your shopping needs! Be it from
         fashion to electronics, you getit all here!
       </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+      <a class="btn btn-primary btn-lg" href="#products" role="button">Explore</a>
     </div>
     <div class="jumbotron-txt-container-2">
       <img src="./assets/cart.gif" alt="" />
@@ -71,31 +77,9 @@
   <!------ Main Section ------->
   <div class="container">
     <div class="row" id="products">
-      <!-------Card Container-1 Section ------->
-      <!-- <div class="col-md-3">
-      <div class="card product">
-        <img src=" https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <div class="product-header">
-            <h5 class="card-title">Card title</h5>
-            <h4 class="card-title product-price">$32</h4>
-          </div>
-          <p class="card-text">Some quick example text to...</p>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span>(102)</span>
-          <div class="btn-container">
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
+      <h1 class="row-header">Trending Offers</h1>
+      <div class="loader"></div>
     </div>
-
   </div>
 
   <!-- JavaScript Bundle with Popper -->
