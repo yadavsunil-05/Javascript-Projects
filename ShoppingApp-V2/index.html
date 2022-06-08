@@ -18,7 +18,7 @@
   <title>Max's Shopping App</title>
 </head>
 
-<body onload="fetchProducts()">
+<body onload="fetchProducts(); modalFunction()">
   <!---- NavBar ---->
   <nav class="navbar navbar-expand-lg navbar-dark max-shop-navbar">
     <a class="navbar-brand" href="#">
@@ -49,9 +49,6 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#" id="ModalPage">SignUp </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="logIn">LogIn </a>
         </li>
       </ul>
     </div>
@@ -104,16 +101,28 @@
       </div>
       <div class="successSignIn">
         <img src="assets/sign.gif" alt="" id="sign-success">
-        <p>Acounted Created ,Log In </p>
+        <p>Acount Created, Please LogIn </p>
       </div>
+      <div class="successLogIn">
+        <img src="assets/logIn.gif" alt="" id="log-success">
+        <p>Hurray!! Happy Shopping Day 🛒</p>
 
+      </div>
       <div class="form-container">
         <form>
           <input type="text" placeholder="Enter the Name" id="nameInput">
           <input type="email" placeholder="Enter your E-mail">
           <input type="password" placeholder="Enter your Password">
           <br>
-          <button type="button" id="submitForm">Sumbit</button>
+          <button type="button" id="submitForm">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container-Login">
+        <form>
+          <input type="email" placeholder="Enter your E-mail">
+          <input type="password" placeholder="Enter your Password">
+          <br>
+          <button type="button" id="LogInBtn">LogIn</button>
         </form>
       </div>
     </div>

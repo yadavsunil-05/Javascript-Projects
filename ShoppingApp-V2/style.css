@@ -225,7 +225,7 @@ footer {
 /*Child Container Styling */
 .ModalContent {
   width: 40%;
-  height: 55%;
+  height: 52%;
   background-color: #ebedee;
   position: absolute;
   top: 50%;
@@ -233,6 +233,19 @@ footer {
   transform: translate(-50%, -50%);
   padding: 20px 10px;
   border-radius: 10px;
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .ModalHeader {
@@ -261,6 +274,7 @@ footer {
 
 #simpleModal .closeBtn .fa-close {
   padding: 2px;
+  opacity: 0.5;
   border: 2px solid rgb(39, 39, 39);
   text-align: right;
   border-radius: 10px;
@@ -276,7 +290,7 @@ footer {
   text-align: center;
 }
 
-#simpleModal .form-container input {
+#simpleModal input {
   padding: 8px 15px;
   margin: 8px;
   width: 70%;
@@ -327,9 +341,28 @@ footer {
   display: none;
 }
 
-#sign-success {
-  width: 40%;
+.successLogIn {
+  width: 100%;
+  text-align: center;
+  display: none;
 }
+
+#sign-success {
+  width: 45%;
+}
+
+#log-success {
+  width: 45%;
+}
+
+.form-container-Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
 
 
 /* -----------Media Queries---------- */
@@ -362,6 +395,14 @@ footer {
     width: 50% !important;
     flex: none;
     max-width: none;
+  }
+
+  #sign-success {
+    width: 50%;
+  }
+
+  #log-success {
+    width: 50%;
   }
 }
 
@@ -400,5 +441,12 @@ footer {
     height: 37%;
   }
 
+  #sign-success {
+    width: 60%;
+  }
+
+  #log-success {
+    width: 60%;
+  }
 
 }
