@@ -1,9 +1,9 @@
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    // document.querySelector(this.getAttribute('href')).scrollIntoView({
-    //   behavior: 'smooth'
-    // });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
 
@@ -16,7 +16,6 @@ ModalPage.addEventListener("click", () => {
 });
 
 const modalFunction = () => {
-
   const modal = document.querySelector("#simpleModal");
   const closeBtn = document.querySelector(".closeBtn i");
   const modalSignUp = document.querySelector("#modalSignUp");
