@@ -48,7 +48,7 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" id="signUp">SignUp </a>
+          <a class="nav-link" href="#" id="ModalPage">SignUp </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" id="logIn">LogIn </a>
@@ -93,10 +93,29 @@
   <!----------- Modal Section ------------>
   <div id="simpleModal" class="Modal">
     <div class="ModalContent">
-      <span class="closeBtn">
-        <i class="fa fa-close" style="font-size:24px"></i>
-      </span>
-      <p>Hello.... I m Modal</p>
+      <div class="ModalHeader">
+        <p class="badge badge-light" id="modalSignUp">SignUp</p>
+        <p class="badge badge-light" id="modalLogIn">LogIn</p>
+      </div>
+      <div class="close-container">
+        <span class="closeBtn">
+          <i class="fa fa-close" style="font-size:24px"></i>
+        </span>
+      </div>
+      <div class="successSignIn">
+        <img src="assets/sign.gif" alt="" id="sign-success">
+        <p>Acounted Created ,Log In </p>
+      </div>
+
+      <div class="form-container">
+        <form>
+          <input type="text" placeholder="Enter the Name" id="nameInput">
+          <input type="email" placeholder="Enter your E-mail">
+          <input type="password" placeholder="Enter your Password">
+          <br>
+          <button type="button" id="submitForm">Sumbit</button>
+        </form>
+      </div>
     </div>
   </div>
 
