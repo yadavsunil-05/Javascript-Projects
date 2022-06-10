@@ -1,18 +1,19 @@
 const cartBtn = document.querySelector('.fa-shopping-cart')
-const cartModal = document.querySelector('#cartSimpleModal')
+const cartCloseBtn = document.querySelector('.cartCloseBtn i')
 const parentCartBox = document.querySelector('.cartModelContent')
-
+const cartModal = document.querySelector('#cartSimpleModal')
 //Opening the cart modal
 cartBtn.addEventListener('click', () => {
   cartModal.style.display = 'block'
 })
 
 //close the cart modal
-cartModal.addEventListener('click', () => {
+cartCloseBtn.addEventListener('click', () => {
   cartModal.style.display = 'none'
-}, true)
+})
 
 const createCartItem = (cartProduct) => {
+  document.querySelector('.cart-empty-img').style.display = "none";
 
   const cartSingleDiv = document.createElement('div');
   const cartProdImgDiv = document.createElement('div');
@@ -48,12 +49,18 @@ const createCartItem = (cartProduct) => {
 
   cartProdImgTag.setAttribute('src', cartProduct.image);
   cartProdImgTag.setAttribute('width', "75px");
-  cartProdTitleH5.textContent = `${cartProduct.title.slice(0, 10)}...`
+  cartProdTitleH5.textContent = `${cartProduct.title.slice(0, 15)}...`
   cartProdPriceH4.textContent = `$${cartProduct.price}`
 
 
   cartRemoveBtn.addEventListener('click', function () {
-    cartSingleDiv.style.display = "none"
+    parentCartBox.removeChild(cartSingleDiv)
+    cardItems = cardItems.filter(cartItemid => cartItemid != cartProduct.id)
+    // This will only return the id which are present on dom/cart and the deleted cart product id will get remove from array
+    document.querySelector(".cart-val").innerText = `${cardItems.length}`
+    if (cardItems.length == 0) {
+      document.querySelector('.cart-empty-img').style.display = "block";
+    }
   })
 }
 

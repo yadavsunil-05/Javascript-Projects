@@ -1,4 +1,4 @@
-const cardItems = []
+let cardItems = []
 
 const addToCart = (id) => {
   cardItems.push(id)
