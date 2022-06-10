@@ -14,6 +14,7 @@
   <script src="Js/createProduct.js" defer></script>
   <script src="Js/misc.js" defer></script>
   <script src="Js/addToCart.js" defer></script>
+  <script src="Js/createCartItem.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>Max's Shopping App</title>
 </head>
@@ -87,7 +88,29 @@
   </footer>
 
 
-  <!----------- Modal Section ------------>
+  <!----------- Modal Section Cart ------------>
+  <div id="cartSimpleModal" class="cartModal">
+    <div class="cartModelContent">
+      <!-- <div id="cartSingleItem">
+        <div class="cartProductImg">
+          <img src=" https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" width="75px" class="cartImg">
+        </div>
+        <div class="cartProductBody">
+          <div class="cartProductHeader">
+            <h5 class="cartProductTitle">Card title</h5>
+            <h4 class="card-title cartProductPrice">$32</h4>
+          </div>
+          <div class="cartProductRemove">
+            <button class="cartRemoveBtn">Remove</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+  <!----------- Modal Section Login And Sign ------------>
   <div id="simpleModal" class="Modal">
     <div class="ModalContent">
       <div class="ModalHeader">
@@ -106,7 +129,6 @@
       <div class="successLogIn">
         <img src="assets/logIn.gif" alt="" id="log-success">
         <p>Hurray!! Happy Shopping Day 🛒</p>
-
       </div>
       <div class="form-container">
         <form>
