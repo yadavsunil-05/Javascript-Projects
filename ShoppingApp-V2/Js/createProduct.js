@@ -77,6 +77,7 @@ const createProductDiv = (productObj) => {
 
   btnCart.addEventListener('click', (e) => {
     btnCart.innerHTML = '<i class="fa fa-cart-plus fa-cart-plus-checked"><i>'
+    btnCart.setAttribute('class', 'btn btn-primary add-to-cart-btn disabled')
     addToCart(productObj.id)
   })
 }

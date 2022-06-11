@@ -13,6 +13,7 @@
   <script src="Js/script.js" defer></script>
   <script src="Js/createProduct.js" defer></script>
   <script src="Js/misc.js" defer></script>
+  <script src="Js/SignInLogInValidation.js" defer></script>
   <script src="Js/addToCart.js" defer></script>
   <script src="Js/createCartItem.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -125,16 +126,16 @@
       <div class="form-container">
         <form>
           <input type="text" placeholder="Enter the Name" id="nameInput">
-          <input type="email" placeholder="Enter your E-mail">
-          <input type="password" placeholder="Enter your Password">
+          <input type="email" placeholder="Enter your E-mail" id="signEmail">
+          <input type="password" placeholder="Enter your Password" id="signPassword">
           <br>
           <button type="button" id="submitForm">Sign Up</button>
         </form>
       </div>
       <div class="form-container-Login">
         <form>
-          <input type="email" placeholder="Enter your E-mail">
-          <input type="password" placeholder="Enter your Password">
+          <input type="email" placeholder="Enter your E-mail" id="loginEmail">
+          <input type="password" placeholder="Enter your Password" id="loginPassword">
           <br>
           <button type="button" id="LogInBtn">LogIn</button>
         </form>
