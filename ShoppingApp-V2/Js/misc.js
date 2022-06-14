@@ -32,6 +32,7 @@ const modalFunction = () => {
     document.querySelector(".form-container").style.display = "none";
     closeBtn.style.display = "none";
     modalSignUp.style.display = "none";
+    userDetails()
     setTimeout(() => {
       closeBtn.style.display = "block";
       modalLogIn.style.display = "block";
@@ -46,9 +47,9 @@ const modalFunction = () => {
     modalLogIn.style.display = "none";
     document.querySelector(".form-container-Login").style.display = "none";
     document.querySelector(".successLogIn").style.display = "block";
+    verifyDetails()
     setTimeout(() => {
       modal.style.display = "none";
     }, 4000);
   });
 }
-
