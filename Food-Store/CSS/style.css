@@ -1,0 +1,151 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-bold";
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Raleway-black";
+  src: url(../fonts/Raleway-Black.ttf);
+}
+
+:root {
+  --primary: #eebf00;
+  --secondary: #232b38;
+  --ternary: #6c6c6c;
+  --danger: #fe4545;
+  --pure: #fefefe;
+  --light: #f0f0f0;
+  --heaven: #ffffff;
+  --footer: #2d333f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* border: 2px solid red; */
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+/* @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 920px;
+  }
+} */
+
+.topbar {
+  background: var(--secondary);
+  color: var(--pure);
+  font-family: "Raleway-semibold";
+  padding: 0.6rem 0;
+}
+
+.topbar .auth > div a {
+  color: var(--pure);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.topbar .icons a {
+  margin-right: 0.6rem;
+}
+
+.topbar .auth .divider {
+  padding: 0 1rem;
+}
+
+.topbar .auth > div img {
+  margin-right: 0.35rem;
+}
+
+nav .top {
+  padding: 1.3rem 0;
+}
+
+nav .top .contact h5,
+nav .top .time h5 {
+  font-family: "Raleway-black";
+  margin-bottom: 0.2rem;
+}
+
+nav .top .contact h6,
+nav .top .time h6 {
+  font-family: "Raleway-medium";
+  letter-spacing: 0.055rem;
+  font: size 0.75em;
+  color: var(--ternary);
+}
+
+nav .top .contact img,
+nav .top .time img {
+  margin-right: 1rem;
+}
+
+nav .navbar a {
+  text-decoration: none;
+  font-family: "Raleway-semibold";
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+/* Utility Classes */
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}

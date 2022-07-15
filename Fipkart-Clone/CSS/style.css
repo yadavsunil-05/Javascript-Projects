@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --main-bg-color: #2874f0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  background-color: var(--main-bg-color);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 82px;
+  padding: 0px 25px;
+}
+
+nav ul {
+  height: 9vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0px 23px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 31vw;
+  height: 31px;
+  border-radius: 3px;
+  margin: 0px 15px 0px 25px;
+  outline: none;
+  border: none;
+  padding: 0px 8px;
+}
+
+.container {
+  min-height: calc(100vh - 9vh - 12vh);
+  margin-top: 58px;
+}
+
+.slider {
+  margin: 10px auto;
+  width: 98vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.card {
+  max-width: 90vw;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-header {
+  position: relative;
+  border-top: 1px solid rgb(214, 214, 214);
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+.container-header button {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  padding: 10px 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0px;
+}
+
+.card h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 12vw;
+  margin: 0px 15px;
+}
+.text-align {
+  text-align: center;
+}
+
+footer {
+  height: 12vh;
+  background-color: var(--main-bg-color);
+  color: white;
+  font-family: "Lato", sans-serif;
+}

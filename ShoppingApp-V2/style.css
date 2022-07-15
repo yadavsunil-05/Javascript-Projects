@@ -474,6 +474,61 @@ footer {
 }
 
 
+
+/* Alert Section */
+.custom-alert {
+  background-color: #ffdb9b;
+  padding: 10px 20px;
+  min-width: 400px;
+  position: fixed;
+  z-index: 300;
+  top: 60px;
+  right: 10px;
+  border-radius: 8px;
+  border-left: 8px solid #ffa502;
+  display: none;
+}
+
+.custom-alert.show {
+  animation: show 1s ease forwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translateX(100%);
+  }
+
+  40% {
+    transform: translateX(-10%);
+  }
+
+  80% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-8px);
+  }
+}
+
+
+.custom-alert .fa-exclamation-circle {
+  position: relative;
+  top: 50%;
+  left: 1%;
+  transform: translateX(-50%);
+  color: #ce8500;
+  font-size: 25px;
+}
+
+.custom-msg {
+  padding: 0px 2px;
+  font-size: 18px;
+  color: #ce8500;
+}
+
+
+
 /* -----------Media Queries---------- */
 
 @media only screen and (max-width:768px) {

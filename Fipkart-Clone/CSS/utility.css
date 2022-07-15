@@ -1,0 +1,48 @@
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: var(--main-bg-color);
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #2e71dd;
+  color: white;
+  transition: 0.2s;
+  /* box-shadow: 5px 5px 10px white; */
+}
+
+.my-2 {
+  margin: 17px 0px;
+}
+
+.my-1 {
+  margin: 4px 0px;
+}
+
+.btn-view {
+  padding: 0px 5px;
+  background-color: var(--main-bg-color);
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+.btn-view:hover {
+  background-color: #2e71dd;
+  color: white;
+  transition: 0.2s;
+}

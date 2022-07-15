@@ -1,5 +1,5 @@
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
+  anchor.addEventListener("climodalSignUpck", function (e) {
     e.preventDefault();
     // document.querySelector(this.getAttribute('href')).scrollIntoView({
     //   behavior: 'smooth'
@@ -14,6 +14,7 @@ let ModalPage = document.querySelector("#ModalPage");
 ModalPage.addEventListener("click", () => {
   modalFunction()
 });
+
 
 const modalFunction = () => {
   const modal = document.querySelector("#simpleModal");
@@ -39,7 +40,7 @@ const modalFunction = () => {
       document.querySelector(".successSignIn").style.display = "none";
       document.querySelector(".form-container").style.display = "none";
       document.querySelector(".form-container-Login").style.display = "block";
-    }, 4000)
+    }, 5000)
   });
 
   LogInBtn.addEventListener("click", () => {
@@ -50,6 +51,10 @@ const modalFunction = () => {
     verifyDetails()
     setTimeout(() => {
       modal.style.display = "none";
-    }, 4000);
+      modalSignUp.style.display = "block"
+      closeBtn.style.display = "block"
+      document.querySelector(".successLogIn").style.display = "none";
+      document.querySelector(".form-container").style.display = "block";
+    }, 5000);
   });
 }

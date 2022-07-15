@@ -1,0 +1,208 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.background-img {
+  background-image: url("1.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding-left: 2em;
+}
+
+.header-content {
+  margin-top: 29vh;
+  margin-left: 10vh;
+  width: 38em;
+}
+
+.header-content > h1 {
+  font-size: 3em;
+  color: #fff;
+}
+
+.header-content > p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.btn-view-prod button {
+  padding: 1em 4em;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Contact-Us {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Contact-Us a {
+  color: white;
+  margin: 0 1.5em;
+}
+#insta {
+  padding-right: 2em;
+}
+
+.section-2-container {
+  background-color: #dddddd;
+}
+.Section2-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+}
+
+.Section2-header h1 {
+  padding-top: 3em;
+}
+
+.card {
+  width: 18em;
+  background-color: rgb(240, 148, 148);
+  border-radius: 8px;
+  padding: 0.5em;
+}
+
+.product-img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.proiduct-info > h1 {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.proiduct-info > p {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.product-link {
+  text-align: center;
+}
+
+.product-link a:link {
+  color: royalblue;
+}
+
+/* .section-2-container {
+  background-color: red;
+  padding: 2em;
+} */
+
+.product-card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.view-all-product {
+  text-align: center;
+}
+
+.view-all-product a {
+  display: block;
+  padding-bottom: 3em;
+}
+
+.section-3-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d8d8d8;
+  height: 100vh;
+  align-items: center;
+}
+
+.main-text > h1 {
+  font-size: 3em;
+}
+
+.input-field {
+  width: 20em;
+  padding: 1em;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  border-left-color: #333;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+#message-field {
+  padding: 1em;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  border-left-color: #333;
+  border-left-width: 2px;
+  border-left-style: solid;
+  resize: none;
+  width: 24.6em;
+  height: 10em;
+}
+
+.btn {
+  width: 20em;
+  padding: 1em;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  height: 50vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social ul li {
+  padding-left: 0px;
+  text-align: left;
+}
+
+.social {
+  margin-top: 1.7em;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+}
